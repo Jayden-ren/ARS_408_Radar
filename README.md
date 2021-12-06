@@ -30,3 +30,12 @@ lsusb  # 查看usb接口
 ```shell
 ACTION=="add", SUBSYSTEMS=="usb", ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="0053", GROUP="users", MODE="0777"
 ```
+
+### 2. 下载驱动
+https://github.com/VincentCheungM/ESR_canalyst_ros
+
+```shell
+rosrun canalystii_node canalystii_node_ros
+```
+订阅`rostopic echo /canalyst_can`
+![img](img/canalyst.png)
