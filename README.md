@@ -38,4 +38,9 @@ https://github.com/VincentCheungM/ESR_canalyst_ros
 rosrun canalystii_node canalystii_node_ros
 ```
 订阅`rostopic echo /canalyst_can`
+
 ![img](img/canalyst.png)
+
+拿到的数据都是十六进制转为十进制输出的。
+这时只需要订阅该话题，进行数据处理就行了。如果需要更改雷达功率，ID,输出类型，需要使用windows电脑参考通讯协议进行配置。
+
